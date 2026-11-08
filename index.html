@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
@@ -25,26 +26,27 @@
     <section class="hero">
         <h1>Welcome to My Portfolio</h1>
         <p>I'm a passionate developer creating amazing web experiences.</p>
-        <div>
-            <button>Services</button>
-            <button>Contact</button>
+        <div class="btn-container">
+            <button class="btn">Services</button>
+            <button class="btn btn-secondary">Contact</button>
         </div>
     </section>
     <section id="about" class="about">
         <h2>About Me</h2>
-        <div>
-            <p>Hello! I'm a web developer based in Nyeri, Kenya. I specialize in creating responsive and user-friendly websites.</p>
-            <span>
+        <div class="left container">
+            <p>Web developer, designer, and creative. Let’s bring your idea to life.</p>
+            <div>
                 <!-- Add your image here -->    
                  <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li> 
+                    <li><i class="fa-brands fa-instagram" aria-label="Instagram"></i></li>
+                    <li><i class="fa-brands fa-x-twitter" aria-label="X"></i></li>
+                    <li><i class="fa-brands fa-facebook-f" aria-label="Facebook"></i></li>
+                    
                  </ul>
-            </span>
+            </div>
         </div>
         <div>
-            <img src="images/prof.jpg" alt="My Image">
+            <img src="images/prof.jpg" alt="My Image" width="200">
         </div>
     </section>
     <section id="services" class="services">
@@ -53,17 +55,25 @@
             <div class="card">
                 <h3>Web Development</h3>
                 <p>I build responsive and dynamic websites.</p>
-                <button>Get Services</button>
+                <button>Get in touch</button>
             </div>
             <div class="card">
                 <h3>UI/UX Design</h3>
                 <p>I create user-friendly interfaces and experiences.</p>
-                <button>Get Services</button>
+                <button>Get in touch</button>
             </div>
             <div class="card">
                 <h3>SEO Optimization</h3>
                 <p>I help improve your website's visibility on search engines.</p>
-                <button>Get Services</button>
+                <button>Get in touch</button>
+
+            </div>
+            <div class="card">
+                <h3>Mixed Media & Social Media Services</h3>
+                <p>Animation, video editing, sound, and graphic design into one polished package.</p>
+                <button>Get in touch</button>
+
+
             </div>
         </div>
     </section>
@@ -71,13 +81,14 @@
         <h2>My Projects</h2>
         <div>
             <div class="project-card">
-                <img src="images/KJSEA revision app.jpg" alt="Project 1">
-                <h3>Project 1</h3>
+                <img src="images/KJSEA revision app.jpg" alt="Project 1" width="600">
+                <h3>KJSEA Mock Exams App</h3>
                 <p>A web application for helping students revise, learn and practice.</p>
             </div>
             <div class="project-card">
-                <img src="images/Simba Safari.jpg" alt="Project 2">
-                <h3>Project 2</h3>
+                <img src="images/Simba Safari.jpg" alt="Project 2" width="600">
+            
+                <h3>Simba's ABC's</h3>
                 <p>An edutainment web application for teaching children,
                     whilst also providing a fun and engaging learning experience.</p>
 
@@ -97,6 +108,7 @@
                 <p>"I highly recommend their services. The UI/UX design was top-notch!"</p>
                 <h4>- Ryomen Sukuna</h4>
             </div>
+        </div>
     </section>
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
@@ -111,7 +123,7 @@
          <div>
             <form>
              <div>
-               label for="name">Name:</label>
+               <label for="name">Name:</label>
                 <input type="text" 
                 placeholder="Enter your name" id="name" name="name" required>
              </div>
@@ -124,8 +136,11 @@
                     <label for="message">Message:</label>
                     <textarea id="message" 
                     placeholder="Enter your message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
             </form>
             
+        </div>
         </div>
     </section>
     <footer>

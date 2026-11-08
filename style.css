@@ -1,3 +1,316 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-header{display: flex; 
-justify-content: space-between; align-items: center; padding: 20px; background-color: #333; color: #fff;}
+
+:root {
+    --midnight-black: #05070d;
+    --electric-cobalt: #245bff;
+    --acid-lime: #b7ff00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--midnight-black);
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.6;
+}
+
+/*Header Styles*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--midnight-black);
+    border-bottom: 2px solid var(--electric-cobalt);
+    color: #fff;
+    height: 70px;
+    padding: 10px;
+}
+
+
+header>h1 {
+    color: var(--acid-lime);
+}
+
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li {
+    margin: 10px;
+    list-style: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav>ul>li>a:hover {
+    color: var(--acid-lime);
+}
+
+/* Hero Styles */
+.hero {
+   background-image: linear-gradient(rgba(36, 91, 255, 0.2), rgba(5, 7, 13, 1)), url("images/background.jpg");
+   background-position: center;
+   background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 4rem;
+    color: var(--acid-lime);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.hero > h1{
+    color: var(--acid-lime);
+    font-size: 3rem;
+ }
+
+ .btn{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--electric-cobalt);
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+ }
+.btn:hover{
+    background-color: var(--acid-lime);
+    color: var(--midnight-black);
+}
+
+.btn-secondary{
+    background-color: var(--acid-lime);
+    color: var(--midnight-black);
+    }
+    
+.btn-secondary:hover{
+    background-color: var(--electric-cobalt);
+    color: #fff;
+}
+.btn-container{
+    margin-top: 10px;
+}
+
+/*About Section Styles*/
+.about{
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+}
+
+section h2{ 
+    color: var(--acid-lime);
+    margin: 20px;
+    font-size: 2rem;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+section h3,
+section h4 {
+    color: var(--acid-lime);
+    margin: 12px 0;
+    font-size: 1.25rem;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left.container{
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.container >p{
+    font-size: 18px;
+    word-spacing: 0.5;
+    color: #fff;
+
+}
+
+.left ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 10px;
+}
+
+.left ul li {
+    list-style: none;
+}
+
+.services >div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  
+}
+
+.card{
+    width: 280px;
+    padding: 20px;
+    background-color: #101522;
+    border: 1px solid var(--electric-cobalt);
+    border-radius: 10px;
+}
+
+.projects >div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card{
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #101522;
+    border: 1px solid var(--electric-cobalt);
+    border-radius: 10px;
+}
+
+.testimonials >div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card{
+    width: 300px;
+    padding: 20px;
+    background-color: #101522;
+    border: 1px solid var(--electric-cobalt);
+    border-radius: 10px;
+}
+
+.contact >div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 10px;
+    background-color: #101522;
+    color: #fff;
+    border: 1px solid var(--electric-cobalt);
+    border-radius: 5px;
+}
+
+.contact textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact form{
+    width: 100%;
+    max-width: 400px;
+}
+
+footer{
+    padding: 20px;
+    text-align: left;
+}
+
+.card button{
+    margin-top: 12px;
+    padding: 8px 14px;
+    background-color: var(--electric-cobalt);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: var(--acid-lime);
+    color: var(--midnight-black);
+}
+
+.about img{
+    display: block;
+    margin: 20px auto 0;
+    border: 3px solid var(--electric-cobalt);
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(36, 91, 255, 0.35);
+}
+.card,
+.project-card,
+.testimonial-card{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover,
+.project-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(36, 91, 255, 0.2);
+}
+
+footer >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 88%;
+    max-width: 1120px;
+    margin: 0 auto 20px;
+}
+
+footer h1,
+footer h3 {
+    margin: 0 0 12px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--acid-lime);
+}
+
+footer > p {
+    width: 88%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
